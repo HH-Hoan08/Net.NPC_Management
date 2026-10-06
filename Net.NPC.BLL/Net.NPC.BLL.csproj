@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A4D0077-C110-4D06-8A61-93A2AEA24600}</ProjectGuid>
+    <ProjectGuid>{0A1129C6-B443-4348-9585-DB18D8092227}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Net.NPC.DAL</RootNamespace>
-    <AssemblyName>Net.NPC.DAL</AssemblyName>
+    <RootNamespace>Net.NPC.BLL</RootNamespace>
+    <AssemblyName>Net.NPC.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,9 +45,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Net.NPC.DTO\Net.NPC_DTO.csproj">
+    <ProjectReference Include="..\Net.NPC.DAL\Net.NPC.DAL.csproj">
+      <Project>{5a4d0077-c110-4d06-8a61-93a2aea24600}</Project>
+      <Name>Net.NPC.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Net.NPC.DTO\Net.NPC.DTO.csproj">
       <Project>{d61681ab-6eaf-4f37-b0a0-ff048c307026}</Project>
-      <Name>Net.NPC_DTO</Name>
+      <Name>Net.NPC.DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

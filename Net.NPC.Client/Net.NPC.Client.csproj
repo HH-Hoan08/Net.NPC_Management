@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{317C159C-7560-4334-9035-2BA2E2867ACC}</ProjectGuid>
+    <ProjectGuid>{09BA367C-7923-4AC0-87D7-3E48E461C328}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Net.NPC.Server</RootNamespace>
-    <AssemblyName>Net.NPC.Server</AssemblyName>
+    <RootNamespace>Net.NPC.Client</RootNamespace>
+    <AssemblyName>Net.NPC.Client</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -77,13 +79,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Net.NPC.BLL\Net.NPC_BLL.csproj">
+    <ProjectReference Include="..\Net.NPC.BLL\Net.NPC.BLL.csproj">
       <Project>{0a1129c6-b443-4348-9585-db18d8092227}</Project>
-      <Name>Net.NPC_BLL</Name>
+      <Name>Net.NPC.BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Net.NPC.DTO\Net.NPC_DTO.csproj">
+    <ProjectReference Include="..\Net.NPC.DTO\Net.NPC.DTO.csproj">
       <Project>{d61681ab-6eaf-4f37-b0a0-ff048c307026}</Project>
-      <Name>Net.NPC_DTO</Name>
+      <Name>Net.NPC.DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
